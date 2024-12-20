@@ -115,8 +115,7 @@ int main() {
             cout << "Masukan ID Kasus (3 Angka Unik): ";
             cin >> KasusId;
             cout << "Masukkan Nama Kasus: ";
-            cin.ignore();
-            getline(cin, KasusName);
+            cin >> KasusName;
             insertLastKasus(KasusList, KasusId, KasusName);
             cout << "Kasus Berhasil Ditambah." << endl;
         }
